@@ -35,12 +35,12 @@ class HuaNengTools:
         for filePath in inFilePaths:
             with open(filePath,'r') as fileCSV:
                 csv_data = csv.reader(fileCSV)
-                for cols in csv_data:
+                for rows in csv_data:
                     timeStep = int(index / FrameNum)
                     X = timeStep * CarSpeed
-                    cols[0] = timeStep
-                    cols[1] = MaxX - X
-                    csv_write.writerow(cols)
+                    rows[0] = timeStep
+                    rows[1] = MaxX - X
+                    csv_write.writerow(rows)
                     index += 1
 
     '''
