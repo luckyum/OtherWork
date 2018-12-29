@@ -4,7 +4,6 @@ import time
 from datetime import timedelta, date
 import operator
 from lxml import etree
-from selenium import webdriver
 
 class WorkReport:
     # 默认请求头

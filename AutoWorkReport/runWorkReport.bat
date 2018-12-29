@@ -1,4 +1,3 @@
-cd D:\source
-d:
+path C:\ProgramData\Anaconda3
 python workreport.py
 pause
